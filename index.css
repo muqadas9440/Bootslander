@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* Custom CSS for dropdown-group-hover */
+.dropdown-group:hover .dropdown-group-hover\:opacity-100 {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+}
+
+.dropdown-group:hover .dropdown-group-hover\:scale-100 {
+    transform: scale(1);
+}
+
+.dropdown-group:hover .dropdown-group-hover\:block {
+    display: block;
+}
+
+
+
+@keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+ 
+  .image-animation {
+    animation: moveUpDown 3s ease-in-out infinite;
+  }
+  
+
+
+  
