@@ -1,5 +1,6 @@
 import React from 'react'
 import images from "../assets/images/images";
+import Wavify from "react-wavify";
 
 const HeroSection = () => {
   return (
@@ -29,9 +30,22 @@ const HeroSection = () => {
         </div>
 
         <img src={images.hero} alt="home" className="lg:w-70 mt-30 xl:mt-10 xl:w-100 image-animation " />
-      </div>
-
+        <div className="absolute bottom-0 left-0 w-full">
+          <Wavify
+            fill="#ffffff" // Change this to match your design
+            paused={false}
+            options={{
+              height: 10, // Distance from the bottom
+              amplitude: 40, // Wave height
+              speed: 0.2, // Wave animation speed
+              points: 4, // Number of control points
+            }}
+            className="w-full"
+          />
+        </div>
      
+      </div>
+      
 
     </>
   )
