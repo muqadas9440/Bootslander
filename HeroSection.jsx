@@ -29,8 +29,8 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <img src={images.hero} alt="home" className="lg:w-70 mt-30 xl:mt-10 xl:w-100 image-animation " />
-        <div className="absolute bottom-0 left-0 w-full">
+         <img src={images.hero} alt="home" className="lg:w-70 mt-30 xl:mt-10 xl:w-100 image-animation " />
+        {/* <div className="absolute bottom-0 left-0 w-full">
           <Wavify
             fill="#ffffff" // Change this to match your design
             paused={false}
@@ -41,9 +41,9 @@ const HeroSection = () => {
               points: 4, // Number of control points
             }}
             className="w-full"
-          />
-        </div>
-     
+          /> 
+        </div> 
+      */}
       </div>
       
 

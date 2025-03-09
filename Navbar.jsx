@@ -35,11 +35,14 @@ const Navbar = () => {
     setActiveSection(section);
     const element = document.getElementById(section);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
+      window.scrollTo({
+        top: element.offsetTop - 80, 
+        behavior: "smooth",
+      });
     }
     setIsMobileMenuOpen(false);
   };
-
+  
   return (
     <nav className="bg-blue-950 fixed top-0 left-0 w-full z-50 py-6 md:p-6 transition-all duration-300">
       <div className="mx-auto flex justify-between items-center px-4 xl:px-10  xl:pl-30 xl:pr-34">

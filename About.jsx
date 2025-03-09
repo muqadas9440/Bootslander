@@ -6,6 +6,8 @@ const About = () => {
   return (
     <>
 
+    
+
 <div className="flex flex-col xl:flex-row px-4  lg:px-20 xl:px-30 py-5 gap-5">
   
   <div className="flex flex-col gap-5 w-full lg:w-220 mt-50">
